@@ -1,0 +1,1167 @@
+body {
+    margin: 0; /* Відсутність відступів зовні */
+    padding: 0; /* Відсутність відступів всередині */
+    width: 96.5vw; /* Займає всю ширину вікна */
+    overflow-x: hidden; /* Уникаємо горизонтальної прокрутки */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f8ff, #fef5e7);
+    color: #333;
+    box-sizing: border-box;
+}
+/* Анімація з'явлення */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2D3E50;
+    font-size: 2.4em;
+}
+button {
+    padding: 15px 30px;
+    background-color: #A3D9A5;
+    color: #FFF;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #507D55;
+    transform: scale(1.05);
+}
+
+/* Про школу */
+.about {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e7f0f5, #f7f7f7);
+}
+
+.about-card {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Наші учні */
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+.testimonial-card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    transform: scale(1.05); /* Ефект збільшення при наведенні */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Контактна форма */
+.contact {
+    background: linear-gradient(135deg, #f7f7f7, #e7f0f5);
+    padding: 50px 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Про школу */
+.about {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e7f0f5, #f7f7f7);
+}
+
+/* Наші учні */
+.students {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+/* Контактна форма */
+.contact {
+    background: linear-gradient(135deg, #f7f7f7, #e7f0f5);
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input, .contact textarea {
+    padding: 12px;
+    border: 1px solid #A3D9A5;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.contact input:focus, .contact textarea:focus {
+    box-shadow: 0 0 8px rgba(0, 200, 150, 0.6);
+}
+.contact button {
+    padding: 15px;
+    background-color: #A3D9A5;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.contact button:hover {
+    background-color: #507D55;
+}
+
+
+/* Курси */
+.courses {
+    background: #F0F4EF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Переваги */
+.benefits {
+    background: #FFD166;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+.benefits li {
+    background: #FFF3E2;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+.testimonial-card {
+    min-width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+/* Контактна форма */
+/* Контактна форма з додатковими відступами */
+.contact {
+    background: linear-gradient(135deg, #FFD166, #F96D80);
+    padding: 80px 20px; /* Додано більше відступу зверху та знизу */
+    margin-top: 50px; /* Відступ зверху, щоб блок був трохи нижче */
+    text-align: center;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+}
+
+.contact button {
+    background-color: #335C81;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #1D3A56;
+}
+
+/* Контейнер для карток викладачів */
+.teacher-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    align-items: center;
+}
+
+/* Основний стиль для картки */
+.teacher-card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+    /* overflow: hidden; */
+}
+
+.teacher-card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Сторони картки */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Зробити невидимою протилежну сторону */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #FFD166, #F96D80); /* Той самий градієнт, як у кнопках */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.card-front {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white;
+}
+
+.card-back {
+    /* background: linear-gradient(135deg, #6c5ce7, #a29bfe); */
+    /* color: white; */
+    transform: rotateY(180deg);
+}
+
+/* Стиль для зображення викладача */
+.card-front img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовки */
+.card-front h3, .card-back h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.card-front p, .card-back p {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+/* Загальні налаштування */
+
+h1, h2 {
+    color: #1d3557;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Оновлені стилі для кнопок */
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Картки курсів */
+.course-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.course-card h3 {
+    font-size: 1.5em;
+    color: #1d3557;
+    margin: 10px 0;
+}
+
+.course-card p {
+    font-size: 1em;
+    color: #606c76;
+    line-height: 1.6;
+}
+
+/* Оновлення стилів викладачів */
+
+.card-front, .card-back {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card-front img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Контактна форма */
+.contact {
+    background: linear-gradient(135deg, #ffd166, #ef476f);
+    padding: 60px 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact input, .contact textarea {
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Відгуки */
+.testimonial-card {
+    border-left: 4px solid #6a11cb;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.benefits ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.benefits li {
+    position: relative;
+    background: linear-gradient(135deg, #f4f9ff, #e0f0ff);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits li:nth-child(odd) {
+    margin-top: 20px; /* Зміщення для шахматного порядку */
+}
+
+.benefits li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.benefits li::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e0f0ff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.benefits li::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.about {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e7f0f5, #f5fafc);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    font-size: 1.2em;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    background: linear-gradient(135deg, #d1e8f5, #c8e6f8);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.achievements {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.achievements h2 {
+    color: #FFD166; /* Світлий колір */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.stat p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.courses {
+    background-image: url('https://via.placeholder.com/1200x600?text=Наші+курси');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.courses {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 60px 20px;
+    border-radius: 15px;
+}
+
+
+
+.hero {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background: linear-gradient(135deg, #1d3557, #457b9d); */
+    color: white;
+    padding: 60px 40px;
+    /* border-radius: 15px; */
+    /* margin-bottom: 30px; */
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: flex-start; /* Текст вирівняно по лівому краю */
+    align-items: center; /* Вертикальне вирівнювання по центру */
+    text-align: left;
+    color: white; /* Світлий текст */
+    height: 100vh; /* Висота блоку = висота екрана */
+    width: 100%; /* На всю ширину екрана */
+    padding: 40px;
+    background-image: url('333.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 50%; /* Обмеження ширини текстового блоку */
+    margin: 0; /* Без зайвих відступів */
+    display: flex;
+    flex-direction: column; /* Вертикальне розташування тексту та кнопок */
+    gap: 20px; /* Відступи між елементами */
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Розмір заголовка */
+    line-height: 1.2;
+    margin: 0;
+    color: #FFFFFF; /* Світлий текст */
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin: 0;
+    color: #DADADA; /* Трохи темніший для розмаїття */
+}
+.hero h1 {
+    font-size: 2.8em;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Затемнення навколо тексту */
+}
+
+.hero h1 span {
+    display: block; /* Переносить текст на новий рядок */
+}
+
+.hero .highlight {
+    color: #FFD166;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Загальне затемнення */
+    z-index: 1;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center; /* Центруємо кнопки */
+    gap: 15px; /* Проміжок між кнопками */
+}
+
+/* Кнопка Записатися на курс */
+.hero-content .button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Напівпрозорий контур */
+    background: rgba(255, 255, 255, 0.2); /* Напівпрозоре тло */
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Ефект при наведенні на кнопку */
+.hero-content .button:hover {
+    background: linear-gradient(135deg, #FFD166, #F96D80); /* Градієнт */
+    color: #FFFFFF;
+    border-color: transparent; /* Забираємо контур */
+    transform: scale(1.05); /* Легке збільшення */
+}
+
+.hero-buttons button {
+    padding: 20px 40px; /* Збільшуємо розмір кнопок */
+    font-size: 1.2em; /* Робимо текст на кнопках більшим */
+    border-radius: 10px;
+    margin: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-buttons button:hover {
+    background-color: #4B7BBD;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #F96D80, #FFD166);
+}
+
+.hero-image {
+    max-width: 400px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.about {
+    display: flex;
+    flex-wrap: nowrap; /* Запобігає переносу елементів */
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e7f0f5, #f5fafc);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: nowrap; /* Зображення залишиться збоку від тексту */
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%; /* Текст займає половину простору */
+}
+
+.about img {
+    max-width: 40%; /* Зображення займає до 40% ширини контейнера */
+    height: auto;
+    border-radius: 20px;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .about {
+        flex-wrap: wrap; /* Елементи стають вертикальними на менших екранах */
+    }
+    .about-text, .about img {
+        max-width: 100%; /* Обидва елементи займають всю ширину */
+    }
+    .about img {
+        margin-top: 20px; /* Додаємо відступ між текстом і зображенням */
+    }
+}
+
+
+
+.about {
+    padding: 60px 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+
+section {
+    padding: 20px; /* Відступи всередині */
+    margin: 0; /* Забороняємо зовнішні відступи */
+    width: 100%; /* Займає всю ширину */
+    margin-bottom: 40px;
+}
+
+
+footer {
+    background: #2E3A46;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    width: 96.5vw
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 250px; /* Для адаптивності */
+}
+
+footer .footer-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .footer-section ul li a:hover {
+    color: #FFD166;
+}
+
+.school {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #FFD166, #F96D80);
+    color: #333333;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px auto;
+    /* max-width: 80%; */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.school h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.school p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.phone-input select, .phone-input input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-input select {
+    width: 80px;
+}
+
+.phone-input input {
+    flex: 1;
+}
+
+.benefits.modern {
+    background: linear-gradient(135deg, #f9fafc, #e3e7ee);
+    padding: 60px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1d3557;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.benefit-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card i {
+    font-size: 2.5em;
+    color: #6a11cb;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit-card p {
+    font-size: 1em;
+    color: #606c76;
+    line-height: 1.6;
+}
+
+.testimonials {
+    background: #E4F0F1;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px; /* Заокруглення */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    display: flex;
+    flex-wrap: wrap; /* Дозволяємо переноси */
+    gap: 20px; /* Відстань між елементами */
+    justify-content: center; /* Центруємо елементи */
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.testimonial-card {
+    min-width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px; /* Заокруглення для карток */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    text-align: left;
+    width: 100%; /* Ширина 100% для мобільних пристроїв */
+    max-width: 300px; /* Максимальна ширина на великих екранах */
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.testimonial-card:hover {
+    transform: scale(1.05); /* Легке збільшення при ховері */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Вміст картки */
+.testimonial-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #606c76;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Адаптивність для коментарів */
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 80%; /* Коментарі займають більшу частину ширини */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        max-width: 90%; /* Ще більше зменшення ширини */
+    }
+
+    .testimonial-card p {
+        font-size: 0.9em; /* Зменшуємо розмір тексту */
+    }
+
+    .testimonial-card h4 {
+        font-size: 1em;
+    }
+}
+
+/* Загальний стиль для модального вікна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Показ модального вікна */
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.container {
+    width: 100%; /* Займає всю ширину */
+    padding: 0; /* Прибираємо внутрішні відступи */
+    margin: 0; /* Прибираємо зовнішні відступи */
+    box-sizing: border-box; /* Правильний підрахунок ширини */
+}
+
+
+@media (max-width: 1024px) {
+    .course-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Автоматичний підбір */
+    }
+
+    .about-container {
+        flex-direction: column; /* Стає вертикальним */
+    }
+
+    .hero-content {
+        max-width: 100%; /* Займає всю ширину */
+        text-align: center; /* Центрується текст */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Кнопки одна під одною */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid, .teacher-cards, .testimonial-slider {
+        flex-direction: column; /* Вертикальний вигляд */
+        gap: 20px;
+    }
+
+    .course-card, .testimonial-card {
+        width: 100%; /* Займає всю ширину */
+    }
+
+    .hero {
+        height: auto; /* Підлаштування по контенту */
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Зменшення розміру заголовка */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.8em; /* Ще менші заголовки */
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+

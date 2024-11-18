@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа Бізнес-Англійської</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="container"><!-- Вступний екран -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Ваша платформа для вивчення<br>Бізнес-Англійської</h1>
+                <p>Покращуйте свої навички англійської разом з нами та досягайте успіху в кар'єрі!</p>
+                <a href="#contact" id="scrollToContact" class="button">Записатися на курс</a>
+
+            </div>
+        </section>
+        
+        
+    </div>
+    
+
+    <!-- Курси -->
+    <div class="container">
+        <section class="courses fade-in">
+            <h2>Наші курси</h2>
+            <div class="course-cards">
+                <div class="course-card">
+                    <h3>Business English</h3>
+                    <p>Опануйте основи ділового спілкування англійською.</p>
+                    <p><strong>Тривалість:</strong> 4 місяці</p>
+                    <p><strong>Вартість:</strong> 13900 грн</p>
+                    <button>Деталі курсу</button>
+                </div>
+                <div class="course-card">
+                    <h3>Legal English</h3>
+                    <p>Юридична англійська для професійної діяльності.</p>
+                    <p><strong>Тривалість:</strong> 2 місяці</p>
+                    <p><strong>Вартість:</strong> 7900 грн</p>
+                    <button>Деталі курсу</button>
+                </div>
+                <div class="course-card">
+                    <h3>Business Communication</h3>
+                    <p>Розвиток навичок ділового спілкування.</p>
+                    <p><strong>Тривалість:</strong> 3 місяці</p>
+                    <p><strong>Вартість:</strong> 9900 грн</p>
+                    <button>Деталі курсу</button>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span> <!-- Кнопка закриття -->
+            <h3 id="modal-title"></h3> <!-- Динамічний заголовок -->
+            <p id="modal-description"></p> <!-- Динамічний опис -->
+            <p id="modal-duration"></p> <!-- Тривалість курсу -->
+            <p id="modal-price"></p> <!-- Вартість курсу -->
+        </div>
+    </div>
+
+    <!-- Переваги -->
+    <div class="container">
+        <section class="benefits modern">
+            <h2>Чому обирають нас?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Індивідуальний підхід</h3>
+                    <p>Навчання адаптоване під ваш рівень та цілі.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Малі групи</h3>
+                    <p>Невеликі класи для ефективного навчання.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Сучасні матеріали</h3>
+                    <p>Доступ до цифрових підручників 24/7.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Спілкування з носіями</h3>
+                    <p>Безкоштовні розмовні клуби для практики.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+       
+    
+
+    <!-- Відгуки -->
+    <div class="container">
+        <section class="testimonials fade-in">
+            <h2>Відгуки наших студентів</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p>“Ці курси підготували мене до нової посади в міжнародній компанії!”</p>
+                    <h4>Олена, менеджер з продажів</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>“Викладачі та матеріали на найвищому рівні. Дуже задоволений результатом!”</p>
+                    <h4>Андрій, маркетолог</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>“Мені вдалося покращити англійську для роботи з клієнтами по всьому світу.”</p>
+                    <h4>Марія, фінансовий консультант</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>“Вдячний за структуру курсу та корисні матеріали. Рекомендую всім!”</p>
+                    <h4>Іван, аналітик</h4>
+                </div>
+
+                
+
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="school about fade-in">
+            <h2>Про нашу школу</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Наша школа пропонує навчання, яке поєднує традиційні методики з сучасними технологіями. Ми створюємо дружню атмосферу для студентів, яка сприяє швидкому прогресу.</p>
+                    <ul>
+                        <li>Індивідуальний підхід</li>
+                        <li>Гнучкий графік</li>
+                        <li>Сучасні підручники</li>
+                    </ul>
+                </div>
+                <img src="222.png"  alt="Зображення школи">
+            </div>
+        </section>
+        
+        
+    </div>    
+    <div class="container">
+        <section class="achievements fade-in">
+            <h2>Наші досягнення</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Студентів завершили курси</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Задоволених клієнтів</p>
+                </div>
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Років досвіду викладання</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Корпоративних клієнтів</p>
+                </div>
+                <div class="stat">
+                    <h3>1000+</h3>
+                    <p>Годин практичних занять</p>
+                </div>
+            </div>
+        </section>
+    </div>    
+    
+    <div class="container">
+        <section class="teachers fade-in">
+            <h2>Наші викладачі</h2>
+            <div class="teacher-cards">
+                <!-- Картка Анни Петрової -->
+                <div class="teacher-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/150" alt="Фото Анни Петрової">
+                            <h3>Анна Петрова</h3>
+                            <p>Експерт з бізнес-англійської</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Анна Петрова</h3>
+                            <p>Анна має понад 10 років досвіду викладання бізнес-англійської. Вона спеціалізується на розробці індивідуальних навчальних програм і корпоративному навчанні. Веде курси з акцентом на розвиток розмовних навичок для міжнародних комунікацій.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Картка Івана Дуброва -->
+                <div class="teacher-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/150" alt="Фото Івана Дуброва">
+                            <h3>Іван Дубров</h3>
+                            <p>Експерт з бізнес-англійської</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Іван Дубров</h3>
+                            <p>Іван є спеціалістом з великим стажем у викладанні англійської мови для бізнесу. Він працював з провідними компаніями, допомагаючи їхнім співробітникам освоїти мову для професійного спілкування.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Картка Ольги Коваленко -->
+                <div class="teacher-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/150" alt="Фото Ольги Коваленко">
+                            <h3>Ольга Коваленко</h3>
+                            <p>Спеціаліст з академічної англійської</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Ольга Коваленко</h3>
+                            <p>Ольга допомагає студентам підготуватися до міжнародних іспитів, таких як TOEFL і IELTS. Вона має великий досвід роботи з академічною англійською і забезпечує індивідуальний підхід до кожного студента.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Картка Вікторії Грищенко -->
+                <div class="teacher-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/150" alt="Фото Вікторії Грищенко">
+                            <h3>Вікторія Грищенко</h3>
+                            <p>Спеціаліст з комунікацій</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Вікторія Грищенко</h3>
+                            <p>Вікторія допомагає студентам освоїти навички комунікації для роботи в міжнародних компаніях.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>    
+    
+    
+    
+    
+    
+    
+
+    <!-- Контактна форма -->
+    <div class="container">
+        <section class="contact fade-in" id="contact">
+            <h2>Залиште заявку на консультацію</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Ваше ім’я" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <div class="consultation-form">
+                    <form action="/submit" method="post">
+                        <!-- <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required> -->
+                
+                        <!-- <label for="phone">Ваш номер телефону:</label> -->
+                        <div class="phone-input">
+                            <select name="country-code" id="country-code">
+                                <option value="+1">+1</option>
+                                <option value="+44">+44</option>
+                                <option value="+380">+380</option>
+                                <!-- Додайте інші коди країн -->
+                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="Ваш номер" required>
+                        </div>
+                
+                        <!-- <button type="submit">Надіслати</button> -->
+                    </form>
+                </div>
+                
+                <button type="submit">Відправити заявку</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Контактна інформація</h4>
+                <ul>
+                    <li>Телефон: +38 (099) 123-45-67</li>
+                    <li>Email: info@business-english.com</li>
+                    <li>Адреса: м. Київ, вул. Хрещатик, 1</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Соцмережі</h4>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Графік роботи</h4>
+                <ul>
+                    <li>Пн-Пт: 9:00 - 18:00</li>
+                    <li>Сб: 10:00 - 14:00</li>
+                    <li>Нд: вихідний</li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2024 Business English School. Усі права захищені.</p>
+    </footer>
+    
+
+
+
+    
+</body>
+</html>
